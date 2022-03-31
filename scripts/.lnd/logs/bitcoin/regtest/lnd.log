@@ -1,0 +1,20 @@
+2022-02-28 16:41:01.393 [INF] LTND: Version: 0.14.1-beta commit=kvdb/v1.3.0-27-g8d3d8580f, build=production, logging=default, debuglevel=info
+2022-02-28 16:41:01.394 [INF] LTND: Active chain: Bitcoin (network=regtest)
+2022-02-28 16:41:01.394 [INF] RPCS: Generating TLS certificates...
+2022-02-28 16:41:01.398 [INF] RPCS: Done generating TLS certificates
+2022-02-28 16:41:01.400 [INF] RPCS: RPC server listening on 127.0.0.1:10009
+2022-02-28 16:41:01.410 [INF] RPCS: gRPC proxy started at 127.0.0.1:8080
+2022-02-28 16:41:01.412 [INF] LTND: Opening the main database, this might take a few minutes...
+2022-02-28 16:41:01.412 [INF] LTND: Opening bbolt database, sync_freelist=false, auto_compact=false
+2022-02-28 16:41:01.475 [INF] LTND: Creating local graph and channel state DB instances
+2022-02-28 16:41:01.553 [INF] CHDB: Checking for schema update: latest_version=24, db_version=24
+2022-02-28 16:41:01.553 [INF] LTND: Database(s) now open (time_to_open=141.380792ms)!
+2022-02-28 16:41:01.554 [INF] LTND: We're not running within systemd or the service type is not 'notify'
+2022-02-28 16:41:01.554 [INF] LTND: Waiting for wallet encryption password. Use `lncli create` to create a wallet, `lncli unlock` to unlock an existing wallet, or `lncli changepassword` to change the password of an existing wallet and unlock it.
+2022-02-28 17:39:47.399 [INF] LTND: Received interrupt
+2022-02-28 17:39:47.404 [INF] LTND: Shutting down...
+2022-02-28 17:39:47.405 [INF] LTND: Gracefully shutting down.
+2022-02-28 17:39:47.407 [ERR] LTND: unable to set up wallet password listeners: shutting down
+2022-02-28 17:39:47.408 [ERR] LTND: Shutting down because error in main method: error creating wallet config: unable to set up wallet password listeners: shutting down
+2022-02-28 17:39:47.423 [INF] LTND: Shutdown complete
+
