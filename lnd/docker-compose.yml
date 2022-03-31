@@ -1,0 +1,34 @@
+version: "3"
+services:
+    bslightning:
+      image: lightninglabs/lnd:v0.14.2-beta
+      container_name: alice
+      command: ["lnd"]
+      volumes:
+        - ./lnd.conf:/home/.lnd/lnd.conf  # Conf file
+        - ./alice/data:/home/.lnd/data          
+      ports:
+        - "9735:9735"
+        - "10009:10009"
+        - "8082:8080"
+      networks:
+        - blockspaces
+services:
+    bslightning:
+      image: lightninglabs/lnd:v0.14.2-beta
+      container_name: bob
+      command: ["lnd"]
+      volumes:
+        - ./lnd.conf:/home/.lnd/lnd.conf  # Conf file
+        - ./bob/data:/home/.lnd/data          
+      ports:
+        - "9736:9735"
+        - "10010:10009"
+        - "8081:8080"
+      networks:
+        - blockspaces
+networks:
+  blockspaces:
+    external: true
+    name: bitcoin_blockspaces
+
