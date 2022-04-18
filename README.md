@@ -1,5 +1,4 @@
-# testenv
-LND + bitcoin-core testenv regtest w/ docker
+# LND + Bitcoin testenv
 
 Creates 2 `LND` nodes (Alice & Bob in regtest) & `bitcoin-core` in regtest.
 
@@ -12,6 +11,9 @@ cd bitcoin && docker-compose up -d --build
 ```
 
 Start LND in regtest
+```
+cd lnd && docker-compose up -d --build
+```
 
 Useful Bitcoin commands
 ```
