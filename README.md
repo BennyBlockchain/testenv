@@ -4,9 +4,6 @@ Creates 2 `LND` nodes (Alice & Bob in regtest) & `bitcoin-core` in regtest.
 
 Start Bitcoin in regtest
 ```
-# Starts a Bitcoin node in regtest mode. 
-# user=polaruser
-# password=polarpass
 cd bitcoin && docker-compose up -d --build
 ```
 
